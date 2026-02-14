@@ -1,0 +1,66 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 198, 198, 0.748);
+  background-blend-mode: screen;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+p {
+  width: 75vw;
+  text-shadow:
+    1px 1px 5px #ffffff53,
+    1px -1px 5px #ffffff53,
+    -1px -1px 5px #ffffff53,
+    -1px 1px 5px #ffffff53,
+    2px 2px 5px #ffffff53,
+    2px -2px 5px #ffffff53,
+    -2px -2px 5px #ffffff53,
+    -2px 2px 5px #ffffff53,
+    3px 3px 5px #ffffff53,
+    3px -3px 5px #ffffff53,
+    -3px -3px 5px #ffffff53,
+    -3px 3px 5px #ffffff53,
+    4px 4px 5px #ffffff53,
+    4px -4px 5px #ffffff53,
+    -4px -4px 5px #ffffff53,
+    -4px 4px 5px #ffffff53
+    ;
+}
+
+.HEADER {
+  color: #a90068; /* A deeper red/pink */
+  font-size: 3rem;
+  margin: 3rem auto;
+}
+
+p:not(.HEADER, .signature) {
+  color: #571b1b;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  margin: 2rem auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: bold;
+}
+.signature {
+  color: #571b1b;
+  font-style: italic;
+  text-align: right;
+  font-size: 3rem;
+  margin: 2rem auto;
+}
